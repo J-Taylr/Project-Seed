@@ -832,9 +832,9 @@ public class AstarPath : VersionedMonoBehaviour {
 			if (logPathResults == PathLog.InGame) {
 				inGameDebugPath = debug;
 			} else if (path.error) {
-				Debug.LogWarning(debug);
+				//Debug.LogWarning(debug);
 			} else {
-				Debug.Log(debug);
+				//Debug.Log(debug);
 			}
 		}
 	}
@@ -1193,7 +1193,7 @@ public class AstarPath : VersionedMonoBehaviour {
 			int memory = SystemInfo.systemMemorySize;
 
 			if (memory <= 0) {
-				Debug.LogError("Machine reporting that is has <= 0 bytes of RAM. This is definitely not true, assuming 1 GiB");
+				//Debug.LogError("Machine reporting that is has <= 0 bytes of RAM. This is definitely not true, assuming 1 GiB");
 				memory = 1024;
 			}
 
@@ -1219,8 +1219,8 @@ public class AstarPath : VersionedMonoBehaviour {
 		active = this;
 
 		if (FindObjectsOfType(typeof(AstarPath)).Length > 1) {
-			Debug.LogError("You should NOT have more than one AstarPath component in the scene at any time.\n" +
-				"This can cause serious errors since the AstarPath component builds around a singleton pattern.");
+			/*Debug.LogError("You should NOT have more than one AstarPath component in the scene at any time.\n" +
+				"This can cause serious errors since the AstarPath component builds around a singleton pattern.");*/
 		}
 
 		// Disable GUILayout to gain some performance, it is not used in the OnGUI call
@@ -1375,7 +1375,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		if (!Application.isPlaying) return;
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("+++ AstarPath Component Destroyed - Cleaning Up Pathfinding Data +++");
+			//Debug.Log("+++ AstarPath Component Destroyed - Cleaning Up Pathfinding Data +++");
 
 		if (active != this) return;
 
@@ -1393,7 +1393,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		pathProcessor.queue.TerminateReceivers();
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Processing Possible Work Items");
+			//Debug.Log("Processing Possible Work Items");
 
 		// Stop the graph update thread (if it is running)
 		graphUpdates.DisableMultithreading();
@@ -1402,21 +1402,21 @@ public class AstarPath : VersionedMonoBehaviour {
 		pathProcessor.JoinThreads();
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Returning Paths");
+			//Debug.Log("Returning Paths");
 
 
 		// Return all paths
 		pathReturnQueue.ReturnPaths(false);
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Destroying Graphs");
+			//Debug.Log("Destroying Graphs");
 
 
 		// Clean up graph data
 		data.OnDestroy();
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Cleaning up variables");
+			//Debug.Log("Cleaning up variables");
 
 		// Clear variables up, static variables are good to clean up, otherwise the next scene might get weird data
 
@@ -1776,7 +1776,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		System.GC.Collect();
 
 		if (logPathResults != PathLog.None && logPathResults != PathLog.OnlyErrors) {
-			Debug.Log("Scanning - Process took "+(lastScanTime*1000).ToString("0")+" ms to complete");
+			//Debug.Log("Scanning - Process took "+(lastScanTime*1000).ToString("0")+" ms to complete");
 		}
 	}
 
@@ -1862,7 +1862,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		waitForPathDepth++;
 
 		if (waitForPathDepth == 5) {
-			Debug.LogError("You are calling the BlockUntilCalculated function recursively (maybe from a path callback). Please don't do this.");
+			//Debug.LogError("You are calling the BlockUntilCalculated function recursively (maybe from a path callback). Please don't do this.");
 		}
 
 		if (path.PipelineState < PathState.ReturnQueue) {
