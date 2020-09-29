@@ -8,12 +8,14 @@ public class PlanterController : MonoBehaviour
     bool inCollider = false;
     public int treeMax = 100;
     bool treePlanted = false;
+    public int treeHealth = 100;
 
     private void Update()
     {
         TextAppear();
         PlantTree();        
     }
+
 
 
     public void PlantTree()
@@ -24,6 +26,12 @@ public class PlanterController : MonoBehaviour
             treePlanted = true;
             StartCoroutine(TreeGrower());
         }
+    }
+
+    public void TakeDamage()
+    {
+        treeHealth--;
+        print("ouch! tree health at " + treeHealth);
     }
 
     public IEnumerator TreeGrower()

@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 5846262515478044082}
   - component: {fileID: 1155334702}
   - component: {fileID: 3228014436965771419}
+  - component: {fileID: 6729380596893554471}
   m_Layer: 0
   m_Name: Flying Enemy
   m_TagString: Enemy
@@ -266,5 +267,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fbaa6f2a8769c4da40d0794da2b5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
-  enemyHealth: 1
+  playerController: {fileID: 2107226157, guid: 13af38ce6ca37044d85ab466842aa95f, type: 3}
+  aiSetter: {fileID: 5846262515478044086}
+  planterController: {fileID: 3269769080525473202, guid: 9ba78aff5189cf04890e212b303452ae,
+    type: 3}
+  rb: {fileID: 1155334702}
+  aiPath: {fileID: 5846262515478044085}
+  isWalker: 0
+  enemyHealth: 3
+  attackRadius: 5
+  attackSpeed: 1
+  knockbackStrength: 10
+  knockbackTime: 0.2
+--- !u!58 &6729380596893554471
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846262515478044087}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.1811613
