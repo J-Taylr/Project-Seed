@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public EnemyController enemyController;
+    public Rigidbody2D rb;
+
 
     public CharacterController2D controller; //to find grounding etc
     public GameObject sword;
@@ -21,6 +24,18 @@ public class PlayerController : MonoBehaviour
     bool jump = false;
     bool crouch = false;
     bool move = false;
+
+    [Header("Knockback")]
+    public float knockbackStrength;
+    public float knockupStrength;
+    public float KnockbackTime = 0.3f;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -44,6 +59,26 @@ public class PlayerController : MonoBehaviour
       
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            print("player takes damage");
+            PlayerTakeDamage();
+
+            StartCoroutine(PlayerControlDelay());
+            Vector2 knockbackDirection = gameObject.transform.position - enemyController.transform.position;
+            rb.AddForce(Vector2.up.normalized * knockupStrength, ForceMode2D.Impulse);
+            rb.AddForce(knockbackDirection.normalized * knockbackStrength, ForceMode2D.Impulse);
+        }
+    }
+
+    IEnumerator PlayerControlDelay()
+    {
+        this.enabled = false;
+        yield return new WaitForSeconds(KnockbackTime);
+        this.enabled = true;
+    }
 
     public void PlayerTakeDamage()
     {

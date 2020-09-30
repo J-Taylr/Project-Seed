@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 3228014436965771419, guid: 1f5a79491e30b7d46a00cffaee38e980,
         type: 3}
       propertyPath: attackRadius
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3228014436965771419, guid: 1f5a79491e30b7d46a00cffaee38e980,
         type: 3}
@@ -93,15 +93,20 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 498e081362f95ab42926735e0a85bb38, type: 2}
+    - target: {fileID: 5846262515478044082, guid: 1f5a79491e30b7d46a00cffaee38e980,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5846262515478044083, guid: 1f5a79491e30b7d46a00cffaee38e980,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.01
+      value: -35.589336
       objectReference: {fileID: 0}
     - target: {fileID: 5846262515478044083, guid: 1f5a79491e30b7d46a00cffaee38e980,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.31
+      value: 13.706064
       objectReference: {fileID: 0}
     - target: {fileID: 5846262515478044083, guid: 1f5a79491e30b7d46a00cffaee38e980,
         type: 3}
@@ -159,6 +164,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3269769080525473201, guid: 9ba78aff5189cf04890e212b303452ae,
         type: 3}
+    - target: {fileID: 5846262515478044086, guid: 1f5a79491e30b7d46a00cffaee38e980,
+        type: 3}
+      propertyPath: isFlying
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5846262515478044087, guid: 1f5a79491e30b7d46a00cffaee38e980,
         type: 3}
       propertyPath: m_Name
@@ -174,6 +184,16 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 498e081362f95ab42926735e0a85bb38, type: 2}
+    - target: {fileID: 7944309680130759798, guid: 1f5a79491e30b7d46a00cffaee38e980,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 498e081362f95ab42926735e0a85bb38, type: 2}
+    - target: {fileID: 7944309680130759798, guid: 1f5a79491e30b7d46a00cffaee38e980,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5a79491e30b7d46a00cffaee38e980, type: 3}
 --- !u!114 &1271277215876977630 stripped

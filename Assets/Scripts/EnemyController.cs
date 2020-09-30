@@ -56,10 +56,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            DamagePlayer();
-        }
+        
         if (collision.CompareTag("Weapon"))
         {
             DamageEnemy();
@@ -68,8 +65,7 @@ public class EnemyController : MonoBehaviour
             StartCoroutine(AIPathDelay());
             Vector2 knockbackDirection = gameObject.transform.position - playerController.transform.position;
             rb.AddForce(knockbackDirection.normalized * knockbackStrength, ForceMode2D.Impulse); // knockback for enemy
-            
-
+   
         }
 
     }
@@ -98,10 +94,7 @@ public class EnemyController : MonoBehaviour
     
     
 
-    public void DamagePlayer()
-    {
-        playerController.PlayerTakeDamage();
-    }
+   
 
 
     IEnumerator WalkerAttack()

@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class PlanterController : MonoBehaviour
 {
+    public EnemySpawner enemySpawner;
+    public ProgressBar progressBar;
     [SerializeField] GameObject plantText;
     bool inCollider = false;
-    public int treeMax = 100;
+    public float treeMax = 1;
     bool treePlanted = false;
     public int treeHealth = 100;
+    public float growSpeed;
+    public float treeSize;
+
+    private void Start()
+    {
+        treeHealth = 100;
+    }
 
     private void Update()
     {
         TextAppear();
-        PlantTree();        
+        PlantTree();
+       
     }
 
 
@@ -24,28 +34,32 @@ public class PlanterController : MonoBehaviour
         {
             print("planted a tree!");
             treePlanted = true;
-            StartCoroutine(TreeGrower());
+            StartCoroutine(TreeGrower(0, 1, 60));
+            enemySpawner.StartWave();
         }
     }
+
 
     public void TakeDamage()
     {
         treeHealth--;
-        print("ouch! tree health at " + treeHealth);
+        //print("ouch! tree health at " + treeHealth);
     }
 
-    public IEnumerator TreeGrower()
+  
+    IEnumerator TreeGrower(float v_start, float v_end, float duration)
     {
-        int treeSize = 0;
-        while (treeSize < treeMax)
+        treeSize = 0;
+        float elapsed = 0.0f;
+        while (elapsed < duration)
         {
-            treeSize++;
-            print("tree size " + treeSize);
-            yield return new WaitForSeconds(1);
+            treeSize = Mathf.Lerp(v_start, v_end, elapsed / duration);
+            elapsed += Time.deltaTime;
+            progressBar.IncrementProgress(treeSize);
+            yield return null;
         }
-
+        treeSize = v_end;
     }
-
 
     public void TextAppear()
     {

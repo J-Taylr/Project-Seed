@@ -123,8 +123,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a40bbc2cf6fdff48a35855527800636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemySpawner: {fileID: 7187899601140615402, guid: 51d5e5018b53cbd4788116f126ae9277,
+    type: 3}
   plantText: {fileID: 3269769081839444492}
   treeMax: 100
+  treeHealth: 27
 --- !u!1 &3269769080556574820
 GameObject:
   m_ObjectHideFlags: 0

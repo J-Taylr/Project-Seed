@@ -355,11 +355,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a753cda4d43f450458adcb45fe48b9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyController: {fileID: 3228014436965771419, guid: 1f5a79491e30b7d46a00cffaee38e980,
+    type: 3}
+  rb: {fileID: 0}
   controller: {fileID: 2107226161}
   sword: {fileID: 5757188892995197036}
   animator: {fileID: 1078070603}
   playerHealth: 3
   runSpeed: 40
+  knockbackStrength: 50
+  knockupStrength: 50
+  KnockbackTime: 0.3
 --- !u!114 &2107226161
 MonoBehaviour:
   m_ObjectHideFlags: 0
