@@ -5,6 +5,7 @@ using Pathfinding;
 
 public class EnemyController : MonoBehaviour
 {
+    public EnemySpawner enemySpawner;
     public PlayerController playerController;
     public AIDestinationSetter aiSetter;
     public PlanterController planterController;
@@ -87,8 +88,10 @@ public class EnemyController : MonoBehaviour
         }
         else if (enemyHealth <= 0)
         {
+
             print(gameObject.name + " is dead");
             Destroy(this.gameObject, 0.3f);
+           
         }
     }
     

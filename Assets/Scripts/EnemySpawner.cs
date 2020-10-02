@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
 
     public PlanterController planterController;
-
+    public GameManager gameManager;
 
     [Header("Spawners")]
     public GameObject airSpawner;
@@ -23,11 +23,24 @@ public class EnemySpawner : MonoBehaviour
     public float spawnDMin = 1;
     public float spawnDMax = 6;
 
+    public bool killedAll;
 
     void Start()
     {
         
         spawnDelay = Random.Range(spawnDMin, spawnDMax);
+    }
+
+    private void Update()
+    {
+
+        if (planterController.treeSize >= 1f || Input.GetKeyDown(KeyCode.K))
+          {
+            KillAll();
+            print("killing all");
+            
+          }
+        
     }
 
 
@@ -70,7 +83,18 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
+    public void KillAll()
+    {
+        GameObject flyingEnemy = GameObject.Find("Flying Enemy(Clone)");
+        GameObject WalkingEnemy = GameObject.Find("Walking Enemy Variant(Clone)");
 
+
+        gameManager.WinLevel();
+        GameObject.Destroy(flyingEnemy);
+        GameObject.Destroy(WalkingEnemy);
+
+
+    }
 
 
 

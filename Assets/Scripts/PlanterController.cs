@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PlanterController : MonoBehaviour
 {
+    public TreeAnims treeAnims;
     public EnemySpawner enemySpawner;
     public ProgressBar progressBar;
     [SerializeField] GameObject plantText;
+    
+
     bool inCollider = false;
     public float treeMax = 1;
     bool treePlanted = false;
     public int treeHealth = 100;
     public float growSpeed;
     public float treeSize;
+
+    [Header("Tree Anims")]
+    [SerializeField] GameObject treeSeed;
 
     private void Start()
     {
@@ -36,6 +42,7 @@ public class PlanterController : MonoBehaviour
             treePlanted = true;
             StartCoroutine(TreeGrower(0, 1, 60));
             enemySpawner.StartWave();
+            treeSeed.SetActive(true);
         }
     }
 
