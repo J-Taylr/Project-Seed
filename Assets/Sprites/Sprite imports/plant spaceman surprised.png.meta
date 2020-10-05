@@ -1,0 +1,368 @@
+fileFormatVersion: 2
+guid: 0de789ebd3f46384baece10bb9ce264e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7653280530970268607
+    second: plant spaceman surprised_0
+  - first:
+      213: -8855326551659893030
+    second: plant spaceman surprised_1
+  - first:
+      213: -8253381551064390203
+    second: plant spaceman surprised_2
+  - first:
+      213: -6710979080137553817
+    second: plant spaceman surprised_3
+  - first:
+      213: 3242945909385232147
+    second: plant spaceman surprised_4
+  - first:
+      213: -8777911323703303996
+    second: plant spaceman surprised_5
+  - first:
+      213: 377444782502880500
+    second: plant spaceman surprised_6
+  - first:
+      213: -3346610231244849596
+    second: plant spaceman surprised_7
+  - first:
+      213: -3396189569191833553
+    second: plant spaceman surprised_8
+  - first:
+      213: -7642356737389935469
+    second: plant spaceman surprised_9
+  - first:
+      213: 946538475861029934
+    second: plant spaceman surprised_10
+  - first:
+      213: -7217149343514447411
+    second: plant spaceman surprised_11
+  - first:
+      213: -6929488812798436728
+    second: plant spaceman surprised_12
+  - first:
+      213: 5945575190507417948
+    second: plant spaceman surprised_13
+  - first:
+      213: 3188122393912588142
+    second: plant spaceman surprised_14
+  - first:
+      213: -9196416918121681906
+    second: plant spaceman surprised_15
+  - first:
+      213: 8711086915090242638
+    second: plant spaceman surprised_16
+  - first:
+      213: -7110297213785588718
+    second: plant spaceman surprised_17
+  - first:
+      213: -8531158066145675281
+    second: plant spaceman surprised_18
+  - first:
+      213: -998179001951316943
+    second: plant spaceman surprised_19
+  - first:
+      213: -4343770806624414761
+    second: plant spaceman surprised_20
+  - first:
+      213: -1568372152549727816
+    second: plant spaceman surprised_21
+  - first:
+      213: -3979566850348372898
+    second: plant spaceman surprised_22
+  - first:
+      213: 9129346549640709132
+    second: plant spaceman surprised_23
+  - first:
+      213: -1792284747599561374
+    second: plant spaceman surprised_24
+  - first:
+      213: -3538130662237528377
+    second: plant spaceman surprised_25
+  - first:
+      213: -8426816170597625178
+    second: plant spaceman surprised_26
+  - first:
+      213: 2610062481324448468
+    second: plant spaceman surprised_27
+  - first:
+      213: 400260106833813026
+    second: plant spaceman surprised_28
+  - first:
+      213: 1869696460443949707
+    second: plant spaceman surprised_29
+  - first:
+      213: -8370501541136220057
+    second: plant spaceman surprised_30
+  - first:
+      213: 2501105224541733161
+    second: plant spaceman surprised_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plant spaceman surprised_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14caa19e7e51ac590800000000000000
+      internalID: -7653280530970268607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant spaceman surprised_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade2a363b6f8b1580800000000000000
+      internalID: -8855326551659893030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant spaceman surprised_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c56b052539167d80800000000000000
+      internalID: -8253381551064390203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant spaceman surprised_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768c2593510ddd2a0800000000000000
+      internalID: -6710979080137553817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant spaceman surprised_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f76ba6f12410d20800000000000000
+      internalID: 3242945909385232147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant spaceman surprised_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c029c098289e2680800000000000000
+      internalID: -8777911323703303996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant spaceman surprised_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4a867a704fc3500800000000000000
+      internalID: 377444782502880500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plant spaceman surprised_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e76fcc9b37e81d0800000000000000
+      internalID: -3346610231244849596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c4c33314679ebd2459fc2791bb5e2642
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

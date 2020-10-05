@@ -9,16 +9,7 @@ public class GameManager : MonoBehaviour
 
     public bool levelComplete = false;
 
-    void Start()
-    {
-        
-    }
 
-   
-    void Update()
-    {
-       
-    }
 
     public void WinLevel()
     {
@@ -38,6 +29,14 @@ public class GameManager : MonoBehaviour
             }
             SceneManager.LoadScene(nextSceneIndex);
         } 
+    }
+
+    public void Respawn()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex - 1;
+       
+        SceneManager.LoadScene(nextSceneIndex);
     }
     
 }
